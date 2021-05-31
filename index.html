@@ -20,18 +20,24 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Jane Doe</h1>
-							<p>Hyperspace Engineer</p>
+							<span class="image avatar48"><img src="images/profile.jpg" alt="" /></span>
+							<h1 id="title">Alan Butland</h1>
+							<p>Senior Data Engineer</p>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+								<li><a href="#overview" id="overview-link"><span class="icon solid fa-th">Overview</span></a></li>
+								<li><a href="#design" id="design-link"><span class="icon solid fa-th">Design</span></a></li>
+								<li><a href="#requirements" id="requirements-link"><span class="icon solid fa-th">Requirements</span></a></li>
+								<li><a href="#database" id="database-link"><span class="icon solid fa-th">Adding a Database</span></a></li>
+								<li><a href="#security" id="security-link"><span class="icon solid fa-th">Security Considerations</span></a></li>
+								<li><a href="#devops" id="devops-link"><span class="icon solid fa-th">Devops</span></a></li>
+								<li><a href="#future" id="future-link"><span class="icon solid fa-th">Future Work</span></a></li>
+								<li><a href="#tools" id="tools-link"><span class="icon solid fa-th">Tools/Resources</span></a></li>
+								<li><a href="#conclusion" id="conclusion-link"><span class="icon solid fa-th">Conclusion</span></a></li>
 							</ul>
 						</nav>
 
@@ -41,11 +47,9 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/alan-butland-555948183/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/Methendor" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="mailto:alan.butland@virginmedia.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 
 				</div>
@@ -60,129 +64,237 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
+								<h2 class="alt">Senior Cloud Engineer Technical Assessment</h2>
+								<p>An AWS Cloud example by Alan Butland.  June 2021</p>
 							</header>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
-							</footer>
 
 						</div>
 					</section>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
+				<!-- Overview -->
+					<section id="overview" class="two">
 						<div class="container">
 
 							<header>
-								<h2>Portfolio</h2>
+								<h2>Overview</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div>
+							<p>This proof of concept was designed by myself using terraform and AWS best practices.  It makes use of several AWS Cloud services to ensure High Availability and Scalability.   The full infrastructure can be deployed/destroyed with two Terraform commands in just a few minutes.</p>
+							<p>In designing this proof of concept, I created a standalone docker linux container which included the various tools I required, such as the Terraform CLI, Git CLI and the AWS CLI.   I also set it up the Terraform code as a new Repo in my personal Git account.   I installed this on the docker container and linked the container volume externally so I could edit the files in VS Code.   This meant I could use the various useful features of VS Code, such as Git integration, the Terraform extension and the Docker extension.  </p>
+							<p>I set up a new IAM user on my account called ‘terraform-user’ and give him admin access.  I used that users security credentials to configure Terraform on the docker container.   This allowed me to create/destroy any infrastructure necessary for testing. </p>
+							<p>I have set up this proof of concept in the eu-west-2 (London) region.   However, it is simple enough to change this should it be necessary.</p>
 
 						</div>
 					</section>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+				<!-- Design -->
+				<section id="design" class="three">
+					<div class="container">
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+						<header>
+							<h2>Design</h2>
+						</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+						<a href="#" class="image featured"><img src="images/cloud-diagram.png" alt="" /></a>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+						<h3>High Availability</h3>
+						<p>To ensure high availability of the infrastructure, there are certain design choices you can make.</p>
+						<p>First of all, we can make use of multiple aws availability zones (AZ’s).  If we create multiple web servers in multiple AZ’s and run them in tandem, we can ensure that, should one (or two) of amazon’s AZ’s go down, we would still have a web server up and running.</p>
+						<p>We can then automatically manage this by using a Load Balancer to route the public to the appropriate web servers.</p>
+						<p>In addition to this it is possible to deploy your infrastructure to another AWS region in case a whole AWS region goes down.  However, this may not be possible (due to data protection).</p>
+						<p>Another way of ensuring high availability is to make use of AWS’s Auto Scaling Group.  This service can automatically deploy another web server should it detect one of the current web servers has been terminated or become unresponsive.  Additional health checks can also be used such loss of network connectivity or software issues.</p>
 
-						</div>
-					</section>
+						<h3>Scalability</h3>
+						<p>Another use of the Auto Scaling Group (ASG) is the ability to increase the number of available web servers.  Should the public web traffic become too much for the current web servers, we can increase the desired number of web servers we require.  The ASG will create additional web servers as required.  </p>
+						<p>It is also possible to amend the Launch Configuration of any web servers launched by the ASG to change the instance settings.  For example, we can increase the instance type (<a href="https://aws.amazon.com/ec2/instance-types/">https://aws.amazon.com/ec2/instance-types/</a>), the number of CPUs or the size of the Volumes on the instance.   
+						</p>
+						<p>Any changes we make to the ASG launch configuration will affect new instances that are created.  Existing instances will be unaffected.  This way we can add new instances with new configurations without any loss of service.
+						</p>
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+						<img src="images/aws/vpc.png" alt="" width="60" height="60"/>
+						<p>Virtual Private Cloud (VPC) - Each account comes with a default VPC, however, it is better to deploy any new infrastructure to your own VPC that can be configured as you wish.</p>
 
-							<header>
-								<h2>Contact</h2>
-							</header>
+						<img src="images/aws/az.png" alt="" width="60" height="60"/>
+						<p>Availability Zones (AZs) - We are using all 3 available AZs in the eu-west-2 (London) region.   There will be a private subnet, public subnet, web server and NAT gateway in each AZ.</p>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+						<img src="images/aws/private_subnet.png" alt="" width="60" height="60"/>
+						<p>Private Subnets - The web servers will be deployed to the private subnets.   The Auto Scaling group will deploy any new instances to each of these subnets depending on availability.  The private subnets are inaccessible outside the VPC.   They can only be interacted with via either the Load Balancer or the NAT Gateway</p>
 
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
+						<img src="images/aws/public_subnet.png" alt="" width="60" height="60"/>
+						<p>Public Subnets - The NAT Gateways will be deployed to the public subnets.   These use a route table to the Internet Gateway and allow internet traffic between outside the VPC to the private subnets. The load balancer is also placed in the public subnet as it requires internet access.</p>
 
-						</div>
-					</section>
+						<img src="images/aws/load_balancer.png" alt="" width="60" height="60"/>
+						<p>Load Balancer - The load balancer routes public traffic to the corresponding available web servers in the private subnets.  It spans all 3 public subnets so has high availability.</p>
 
+						<img src="images/aws/auto_scaling.png" alt="" width="60" height="60"/>
+						<p>Auto Scaling Group - This covers the 3 private subnets and allows new web servers to be deployed to each private subnet as required/necessary.</p>
+
+						<img src="images/aws/terraform.png" alt="" width="60" height="60"/>
+						<h3>Terraform</h3>
+						<p>The AWS infrastructure above will all be deployed using Terraform.  Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently.</p>
+						<p>The terraform code is stored in Git : <a href="https://github.com/Methendor/terraform">https://github.com/Methendor/terraform</a></p>
+						<p>I have included extensive comments and instructions in that repo for how to use the Terraform code to deploy the required infrastructure.</p>
+						<p>The code is setup so that the infrastructure can be deployed to different environments, Dev and Production.    By referencing a specific .tfvars file, it can deploy the full infrastructure with either dev or prd name prefixes to completely separate environments.   Various settings can be set up for each environment.  For example, different instance types for dev and prd (if you require cheaper smaller instances set up in Dev compared to Production for example).</p>
+						<p>I have split the terraform code up into various different files for clarity and to keep things more organised.   I have made use of many Terraform best practices, such as using external modules, variables, .tfvars files, data blocks etc.</p>
+
+					</div>
+				</section>
+
+				<!-- Requirements -->
+				<section id="requirements" class="two">
+					<div class="container">
+
+						<header>
+							<h2>Requirements</h2>
+						</header>
+
+						<p>In order to set up this proof of concept, there are a number of requirements:</p>
+						<p>Multiple AWS Accounts.   It is recommended that we have 3 AWS accounts:<br>
+							IAM Account.  Account for the setting up of AWS users such as Cloud Engineers, Admins etc.  These users will be able to assume IAM Roles in the other two accounts as necessary<br>
+							Dev Account.   Account for the dev environment.<br>
+							Production Account.  Account for the production environment
+						</p>
+						<p>IAM cloud engineer user accounts/roles/policies set up to allow creation of the required infrastructure using Terraform.  Also require security credentials (AWS ID and secret key)</p>
+						<p>Deployment/Dev environment requires:</p>
+						<p>
+							Terraform CLI<br>
+							Git CLI<br>
+						</p>
+						<p>Git account/repo for Terraform and/or website code.</p>
+						<p>Optional:</p>
+						<p>
+							Jira account for managing Dev workflow<br>
+							Confluence for knowledge/document storage<br>
+							Aws-vault for easy switching between different aws credentials/roles<br>
+							Docker container with all requirements in one stand alone environment
+						</p>
+
+					</div>
+				</section>
+
+				<!-- Database -->
+				<section id="database" class="three">
+					<div class="container">
+
+						<header>
+							<h2>Adding a Database</h2>
+							<p>It is possible to add database architecture to this proof of concept quite easily. AWS has various database solutions available.</p>
+							<p><img src="images/aws/rds.png" alt="" width="60" height="60"/></p>
+							<h3>RDS - Relational Database Service</h3>
+							<p>An RDS addition is fairly easy to set up with the current proof of concept.   It involves adding RDS instances in each of the private subnets alongside the web servers (via the Auto Scaling Group).   We will have 1 instance as the primary database, with the other two as database standby read replicas.   These can be set up so that if the primary database goes down, one of the other standbys will automatically become the primary database.</p>
+							<p>All available web servers will connect with the primary database, with any data being replicated to the other standby instances.</p>
+							<p>A RDS instance is extremely simple to set up and cheap.  However, they can currently only support up to 64tb of data.   If the storage of data is likely to be more than this, it is possible to use Redshift as the database instead.   However, this is 10 times more expensive and requires additional setup and configuration. </p>
+						</header>
+
+					</div>
+				</section>
+
+				<!-- Security -->
+				<section id="security" class="two">
+					<div class="container">
+
+						<header>
+							<h2>Security Considerations</h2>
+						</header>
+
+						<p>Considerable thought has gone into the security of the proof of concept.  Luckily AWS makes security simple to implement into your infrastructure. </p>
+						<p>Security of the web servers - The web servers are all put into private subnets in the VPC.  This means that the instances can only be accessed by other objects in the same VPC (as long as the security groups are correctly configured).  The only way to access the instances are via the AWS Systems Manager (I have set up the instances so that the Systems Manager agent is installed on all new instances) which allows you to SSH into the instance through the AWS console.   I considered setting up a bastion server for this purpose.  However, the Systems Manager is more secure and easier to set up.   For a bastion server you will need to set up the security yourself and also maintain the various SSH key-pairs that will be required.</p>
+						<p>The web servers are given access to the internet via their associated NAT Gateways.  However, the ports are tightly controlled.  Only incoming HTTP traffic is allowed through port 80  (which will be routed through the Load balancer).  They are also outgoing internet access to allow them to download any required updates/installations.</p>
+						<p>Security of the AWS Accounts - It is necessary to restrict the AWS accounts to only Cloud Engineers or Admins.   Therefore all users/devs will create IAM accounts on the main IAM account.   Then they will be given Roles they can switch to in the other accounts as necessary.   For example:</p>
+						<p>
+							Developers.  Can be given access to switch to the devRole Role on the Development Account.   This role will allow them access to various dev related services.  Ie, they can use System Manager to access the web server.  Or they can create additional web servers for various dev branches/features<br>
+							Cloud Engineers.  Can be given access to switch to the cloudEngineerRole in both the Production and Dev accounts.   This will have enhanced permissions for creating/amending/destroying services and resources.   But will not have access to billing/account management.<br>
+							Admins.  Full access to the IAM Account and can switch roles to the adminRole in both the Production and Dev accounts.<br>
+							Additional Roles can be created, such as as ‘Billing Manager’ who will be able to see the billings of each of the accounts.
+						</p>
+
+					</div>
+				</section>
+
+				<!-- Devops -->
+				<section id="devops" class="three">
+					<div class="container">
+
+						<header>
+							<h2>Devops</h2>
+						</header>
+
+						<p>For the devops side of things, I highly recommend the use of both Jira and Git.</p>
+
+						<p><img src="images/aws/jira.jpg" alt="" width="60" height="60"/></p>
+						<h3>Jira</h3>
+						<p>Jira is a powerful work management tool and is one of the main tools for Agile teams.   It is extremely useful for the managing of dev sprints, bug tracking and fixing, new features, release planning.  It can also be integrated into other systems, such as Slack, Jenkins, Git etc.  Jira can be set up with different boards for different departments.  For example, one board for Cloud Engineering work and one for the actual website work.</p>
+
+						<p><img src="images/aws/git.png" alt="" width="60" height="60"/></p>
+						<h3>Git</h3>
+						<p>Git is the most popular version control system is the world.   It is recommend for both the Terraform and the web code, that various branches on the git repos are created for each dev work corresponding to appropriate Jira Tickets.   These can be tracked from initial Creation to Production Deployment.  The proof of concept has been set up so that the web servers can be updated from the web git repo using a specific release tag.</p>
+
+					</div>
+				</section>
+
+				<!-- Future Work -->
+				<section id="future" class="two">
+					<div class="container">
+
+						<header>
+							<h2>Future Work</h2>
+						</header>
+
+						<h3>Jenkins</h3>
+						<p>It is possible to set up various Jenkins jobs to automate the deployment process.  We could have jobs to deploy newest version of the web site to each instance, jobs for shutting down/starting up instances to save on cost.</p>
+
+						<h3>Additional Environments</h3>
+						<p>It is possible (by adding additional env_vars.tfvars files) to add more environments.  Such as a Test and a Pre-Production environment.   These can be created/destroyed as needed.</p>
+
+						<h3>Enhanced configuration of separate Environments</h3>
+						<p>More configuration can be done to the dev environment.  For example, we can set up the terraform to remove the Load Balancer and Auto Scaling.  Also just have the web servers in a public subnet which can be accessed by Developers through Code editors (such as VS Code via SSH).</p>
+
+						<h3>Pricing Estimates</h3>
+						<p>It is possible to get estimates of the pricing costs for this proof concept.  But depends highly on the amount of web traffic the company will expect.   Rough estimates suggest approx £30 - £100 depending on infrastructure decisions such as instance sizes and incoming traffic.</p>
+
+						<h3>Email/SMS Notifications</h3>
+						<p>It is possible to set up Email/SMS notifications when instances are created/destroyed as part of the Auto Scaling.</p>
+
+						<h3>Container Deployment</h3>
+						<p>Set up a docker container which holds all the requirements for deployment (terraform/git cli etc) and use docker commands to run the deployment externally.</p>
+
+					</div>
+				</section>
+
+				<!-- Tools/Resources -->
+				<section id="tools" class="three">
+					<div class="container">
+
+						<header>
+							<h2>Tools/Resources</h2>
+						</header>
+
+						<p>Terraform Code: <a href="https://github.com/Methendor/terraform">https://github.com/Methendor/terraform</a></p>
+						<p>Website Code: <a href="https://github.com/Methendor/website">https://github.com/Methendor/website</a></p>
+						<p>Terraform: <a href="https://learn.hashicorp.com/tutorials/terraform/install-cli">https://learn.hashicorp.com/tutorials/terraform/install-cli</a></p>
+						<p>Website Code: <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html">https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html</a></p>
+						<p>Website Code: <a href="https://gist.github.com/derhuerst/1b15ff4652a867391f03">https://gist.github.com/derhuerst/1b15ff4652a867391f03</a></p>
+						<p>Website Code: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+						<p>Website Code: <a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a></p>
+
+					</div>
+				</section>
+
+				<!-- Conclusion -->
+				<section id="conclusion" class="one dark cover">
+					<div class="container">
+
+						<header>
+							<h2>Conclusion</h2>
+						</header>
+
+						<p>Overall, I have really enjoyed doing this Proof of Concept.  I have quite a lot of experience in AWS cloud technology, I completed the AWS Cloud Practitioner Foundation course and I use AWS services extensively in my day to day job.   However, getting to design a full Proof of Concept from scratch was very enjoyable.</p>
+						<p>This Proof of Concept is fully operational and is currently running in my personal AWS account.  I have deployed the full production environment.  You can find the operational website at the following address:</p>
+						<p><a href="http://methendor-dev-alb-113492704.eu-west-2.elb.amazonaws.com/website/">http://methendor-dev-alb-113492704.eu-west-2.elb.amazonaws.com/website/</a></p>
+						<p>I have set up the website so you can see which instance the Load Balancer is redirecting you to (Refreshing the browser will redirect you to a different instance).</p>
+
+					</div>
+				</section>
 			</div>
 
 		<!-- Footer -->
