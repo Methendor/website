@@ -203,6 +203,7 @@
 						<p>Considerable thought has gone into the security of the proof of concept.  Luckily AWS makes security simple to implement into your infrastructure. </p>
 						<p>Security of the web servers - The web servers are all put into private subnets in the VPC.  This means that the instances can only be accessed by other objects in the same VPC (as long as the security groups are correctly configured).  The only way to access the instances are via the AWS Systems Manager (I have set up the instances so that the Systems Manager agent is installed on all new instances) which allows you to SSH into the instance through the AWS console.   I considered setting up a bastion server for this purpose.  However, the Systems Manager is more secure and easier to set up.   For a bastion server you will need to set up the security yourself and also maintain the various SSH key-pairs that will be required.</p>
 						<p>The web servers are given access to the internet via their associated NAT Gateways.  However, the ports are tightly controlled.  Only incoming HTTP traffic is allowed through port 80  (which will be routed through the Load balancer).  They are also outgoing internet access to allow them to download any required updates/installations.</p>
+						<p>AWS also have a service called ‘AWS Shield’ which is available as default.  AWS Shield protects your account from DDoS attacks.  There is also an Enhanced version for an additional cost.</p>
 						<p>Security of the AWS Accounts - It is necessary to restrict the AWS accounts to only Cloud Engineers or Admins.   Therefore all users/devs will create IAM accounts on the main IAM account.   Then they will be given Roles they can switch to in the other accounts as necessary.   For example:</p>
 						<p>
 							Developers.  Can be given access to switch to the devRole Role on the Development Account.   This role will allow them access to various dev related services.  Ie, they can use System Manager to access the web server.  Or they can create additional web servers for various dev branches/features<br>
@@ -263,6 +264,9 @@
 
 						<h3>Route 53</h3>
 						<p>Register a new domain for the company and route it with Route53.  Or use the companies existing domain name.</p>
+
+						<h3>Dev VPN</h3>
+						<p>VPN for developers to connect to the Dev instances.   Can restrict incoming IP’s to the VPN only via the security groups.</p>
 					</div>
 				</section>
 
